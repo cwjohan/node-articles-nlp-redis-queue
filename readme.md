@@ -10,6 +10,7 @@ Check it out at [http://node-articles-nlp.herokuapp.com/](http://node-articles-n
 
 - [Redis](http://redis.io/) for sessions
 - [MongoDB](http://www.mongodb.org/) for data
+- [node-redis-queue](https://github.com/cwjohan/node-articles-nlp-redis-queue) for job queueing
 
 ## Installing
 
