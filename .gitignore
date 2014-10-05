@@ -1,6 +1,12 @@
 /node_modules
 .DS_Store
-npm-debug.log
+*.log
 /test/benchmarks
 *.env
-
+*~
+*.swp
+*.rdb
+*.dat
+*.out
+*.pid
+*.seed
