@@ -35,7 +35,7 @@ Deploying is easy - just use the Heroku Button:
 If you'd rather clone locally and then deploy through the CLI, you can do that too:
 
 ```
-git clone git@github.com:cwjohan/node-articles-nlp-redis-queue.git
+git clone https://github.com/cwjohan/node-articles-nlp-redis-queue.git
 cd node-articles-nlp
 
 heroku create
