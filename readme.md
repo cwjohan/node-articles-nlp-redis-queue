@@ -2,7 +2,7 @@
 
 Running Node all the way from development to production on Heroku.
 
-Check it out at [http://node-articles-nlp-redis-queue.herokuapp.com/](http://node-articles-nlp.herokuapp.com/).
+Check it out at [http://node-articles-nlp-redis-queue.herokuapp.com/](http://node-articles-nlp-redis-queue.herokuapp.com/).
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/cwjohan/node-articles-nlp-redis-queue)
 
