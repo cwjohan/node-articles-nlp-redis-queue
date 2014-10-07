@@ -15,7 +15,7 @@ Check it out at [http://node-articles-nlp-redis-queue.herokuapp.com/](http://nod
 ## Installing
 
 ```
-$ brew install redis mongodb rabbitmq
+$ brew install redis mongodb
 $ brew services start mongodb
 $ brew services start redis
 $ npm install
