@@ -1,13 +1,15 @@
 {
-  "name": "node-production",
+  "name": "node-articles-nlp-redis-queue",
   "version": "0.0.0",
   "description": "A minimum viable node app for production deployment",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "start": "nf start"
   },
   "author": "Hunter Loftis <hunter@heroku.com>",
-  "repository": "hunterloftis/node-production",
+  "contributors": ["Craig Johannsen <cwjohan[.at.]gmail[.dot.]com>"],
+  "repository": "https://github.com/cwjohan/node-articles-nlp-redis-queue.git",
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.2.1",
