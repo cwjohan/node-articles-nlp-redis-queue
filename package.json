@@ -1,6 +1,6 @@
 {
   "name": "node-articles-nlp-redis-queue",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "A minimum viable node app for production deployment",
   "keywords": [],
   "main": "index.js",
@@ -13,7 +13,6 @@
   "repository": "https://github.com/cwjohan/node-articles-nlp-redis-queue.git",
   "license": "ISC",
   "dependencies": {
-    "amqplib": "^0.2.1",
     "blitzkrieg": "^1.0.0",
     "body-parser": "^1.5.0",
     "connect-redis": "^2.0.0",
@@ -23,7 +22,6 @@
     "express": "^4.9.7",
     "express-session": "^1.6.5",
     "foreman": "^0.4.2",
-    "jackrabbit": "^2.3.0",
     "jade": "^1.5.0",
     "lodash": "^2.4.1",
     "logfmt": "^1.1.2",
@@ -33,6 +31,7 @@
     "mongoose-random": "^0.1.1",
     "mongoose-timestamp": "^0.3.0",
     "morgan": "^1.2.0",
+    "node-redis-queue": "^0.1.4",
     "node-uuid": "^1.4.1",
     "promise": "^5.0.0",
     "redis": "^0.12.1",
