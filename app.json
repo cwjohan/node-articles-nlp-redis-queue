@@ -18,10 +18,6 @@
     "rediscloud",
   ],
   "env": {
-    "QUEUE_CONFIG_FILE": {
-      "description": "location of redis-queue-config file",
-      "value": "/app/redis-queue-config.json"
-    },
     "THRIFTY": {
       "description": "run on a single (free) dyno",
       "value": "true"
