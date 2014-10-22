@@ -18,7 +18,7 @@ function reset() {
 
   var articles = instance.deleteAllArticles();
   var pending = instance.purgePendingArticles();
-  var votes = instance.purgePendingVotes();
+  // var votes = instance.purgePendingVotes();
 
   Promise.all([articles, pending, votes])
     .then(onComplete);
