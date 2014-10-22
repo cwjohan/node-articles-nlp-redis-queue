@@ -1,6 +1,6 @@
 {
   "name": "node-articles-nlp-redis-queue",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A minimum viable node app for production deployment",
   "keywords": [],
   "main": "index.js",
