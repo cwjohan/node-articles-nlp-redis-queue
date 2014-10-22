@@ -16,7 +16,6 @@
   "addons": [
     "mongohq",
     "rediscloud",
-    "cloudamqp"
   ],
   "env": {
     "THRIFTY": {

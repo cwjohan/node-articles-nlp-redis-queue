@@ -1,5 +1,5 @@
 {
-  "verbose": false,
+  "verbose": true,
   "redis_provider": {
     "type": "HerokuRedisCloud"
   },
