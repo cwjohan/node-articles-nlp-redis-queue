@@ -46,6 +46,7 @@ heroku addons:add rediscloud
 heroku config:set NODE_ENV=production
 heroku config:set VIEW_CACHE=true
 heroku config:set THRIFTY=true
+heroku config:set QUEUE_CONFIG_FILE=/app/redis-queue-config.json
 
 git push heroku master
 heroku open
