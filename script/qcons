@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+var SCRAPE_QUEUE = 'jobs.scrape';
+
+var logger = require('logfmt');
+var WorkQueueBroker = require('node-redis-queue').WorkQueueBroker;
+
+var broker = new WorkQueueBroker();
+broker.connect(function() {
+  logger.log({type: 'info', msg: 'connected', service: 'qcons'});
+  var scrapeQueue = broker.createQueue(SCRAPE_QUEUE);
+  scrapeQueue.consume(function(job, ack) {
+    if (typeof job === 'string' && job == '***stop***') {
+      logger.log({type: 'info', msg: 'stopping', service: 'qcons'});
+      broker.end();
+    } else {
+      logger.log({type: 'info', msg: 'consuming', data: JSON.stringify(job),
+                  service: 'qcons'});
+      ack();
+    }
+  });
+});
+
+

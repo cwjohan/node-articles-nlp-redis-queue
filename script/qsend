@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+var SCRAPE_QUEUE = 'jobs.scrape';
+
+var logger = require('logfmt');
+var WorkQueueBroker = require('node-redis-queue').WorkQueueBroker;
+var jobs = [
+  {id: 1, url: 'http://www.bbc.com/news/health-29707393', userId: 123},
+  {id: 2, url: 'http://www.cdc.gov/vhf/ebola/outbreaks/2014-west-africa/index.html', userId: 123}
+];
+
+var stop = process.argv[2] === 'stop';
+var clear = process.argv[2] === 'clear';
+
+var broker = new WorkQueueBroker();
+broker.connect(function() {
+  logger.log({type: 'info', msg: 'connected', service: 'qsend'});
+  var scrapeQueue = broker.createQueue(SCRAPE_QUEUE); 
+  if (clear) {
+    logger.log({type: 'info', msg: 'clearing', service: 'qsend'});
+    scrapeQueue.clear(function() {
+      logger.log({type: 'info', msg: 'cleared', service: 'qsend'});
+      broker.end();
+      logger.log({type: 'info', msg: 'done', service: 'qsend'});
+    });
+  } else {
+    if (stop) {
+      logger.log({type: 'info', msg: 'stopping qcons instance', service: 'qsend'});
+      scrapeQueue.send('***stop***');
+    } else {
+      for(i=0; i < jobs.length; i++) {
+        logger.log({type: 'info', msg: 'sending', data: JSON.stringify(jobs[i]),
+                    service: 'qsend'});
+        scrapeQueue.send(jobs[i]);
+      }
+    }
+    broker.end();
+    logger.log({type: 'info', msg: 'done', service: 'qsend'});
+  }
+});
+
