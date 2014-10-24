@@ -121,3 +121,10 @@ It *shows* things and relies on an App instance to *do* things.
 
 The background processes run through [lib/worker](https://github.com/cwjohan/node-articles-nlp-redis-queue/blob/master/lib/worker.js).
 This module is tiny - it just instantiates an App instance to process the job queue.
+
+## Change Log
+
+v0.0.3: First cut at replacing amqp with node-redis-queue, but with vote queue disabled, due to  
+      a queue stall issue when the vote queue is empty upon starting the app.  
+v0.0.7: Fixes the stall issue; vote queue no longer disabled; works fine in local test environment;  
+      not working properly when deployed to Heroku; reason unknown but under investigation.  
