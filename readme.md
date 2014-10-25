@@ -130,3 +130,6 @@ a queue stall issue when the vote queue is empty upon starting the app.
 
 **v0.0.7**: Fixes the stall issue; vote queue no longer disabled; works fine in local test environment;
 not working properly when deployed to Heroku; reason unknown but under investigation.  
+
+**v0.0.8**: Appears to fix issue with RedisCloud queues not working.
+
