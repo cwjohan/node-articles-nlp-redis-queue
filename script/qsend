@@ -26,10 +26,13 @@ broker.connect(function() {
     if (stop) {
       logger.log({type: 'info', msg: 'stopping qcons instance', service: 'qsend'});
       scrapeQueue.send('***stop***');
+    } else if (process.argv[2]) {
+      job = {id: 3, url: process.argv[2], userID: 123};
+      logger.log({type: 'info', msg: 'sending', data: JSON.stringify(job), service: 'qsend'});
+      scrapeQueue.send();
     } else {
       for(i=0; i < jobs.length; i++) {
-        logger.log({type: 'info', msg: 'sending', data: JSON.stringify(jobs[i]),
-                    service: 'qsend'});
+        logger.log({type: 'info', msg: 'sending', data: JSON.stringify(jobs[i]), service: 'qsend'});
         scrapeQueue.send(jobs[i]);
       }
     }
