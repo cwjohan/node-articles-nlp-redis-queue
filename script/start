@@ -3,4 +3,5 @@ if [ -z "$PORT" ]; then
   PORT=2000
 fi
 echo port=$PORT
-node_modules/.bin/nf start -j Procfile2 -x $PORT web=2,worker=2
+node_modules/.bin/nf start -j Procfile2 web=1,worker=1
+# node_modules/.bin/nf start -j Procfile2 -x $PORT web=2,worker=2
