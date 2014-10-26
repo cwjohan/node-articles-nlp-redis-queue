@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -z "$PORT" ]; then
+  PORT=2000
+fi
+echo port=$PORT
+node_modules/.bin/nf start -j Procfile2 -x $PORT web=2,worker=2

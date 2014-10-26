@@ -5,8 +5,8 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
-    "start": "nf start",
-    "reset": "script/reset"
+    "start": "bash script/start",
+    "reset": "bash script/reset"
   },
   "author": "Hunter Loftis <hunter@heroku.com>",
   "contributors": ["Craig Johannsen <cwjohan[.at.]gmail[.dot.]com>"],
