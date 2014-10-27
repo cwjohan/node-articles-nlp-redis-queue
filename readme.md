@@ -135,3 +135,5 @@ not working properly when deployed to Heroku; reason unknown but under investiga
 properly in single process thrifty mode when using remote RedisCloud. Works fine in a local test environment with
 a local instance of redis-server.
 
+**v0.0.9**: Works in thrifty mode by using node-foreman to run separate web and worker sub-processes in a single Heroku web process.
+
