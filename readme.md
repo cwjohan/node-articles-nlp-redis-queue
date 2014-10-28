@@ -87,6 +87,7 @@ heroku config:unset THRIFTY
 heroku config:set CONCURRENCY=4
 heroku ps:scale web=2X:2 worker=2X:1
 ```
+Change Procfile to be the same as Procfile2.
 
 **note:** You'll need to upgrade your addons in order to scale your processes.
 The free addons from this app restrict the number of concurrent connections you can maintain.
