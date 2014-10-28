@@ -24,7 +24,7 @@ $ npm install
 ## Running
 
 1. `npm start`
-2. [http://localhost:5000](http://localhost:3000)
+2. [http://localhost:3000](http://localhost:3000)
 
 ## Deploying
 
