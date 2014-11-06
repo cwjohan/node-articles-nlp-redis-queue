@@ -21,7 +21,7 @@
     "event-loop-lag": "^1.0.1",
     "express": "^4.9.7",
     "express-session": "^1.6.5",
-    "foreman": "^0.4.2",
+    "foreman": "^1.1.0",
     "jade": "^1.5.0",
     "lodash": "^2.4.1",
     "logfmt": "^1.1.2",
