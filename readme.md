@@ -1,4 +1,4 @@
-# Node-Articles-NLP
+# Node-Articles-NLP-Redis-Queue
 
 Running Node all the way from development to production on Heroku.
 
