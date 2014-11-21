@@ -1,8 +1,8 @@
 {
-  "name": "Node-Articles-NLP",
+  "name": "Node-Articles-NLP-Redis-Queue",
   "description": "An Express 4 app that works all the way into production",
-  "website": "https://github.com/heroku/node-articles-nlp",
-  "repository": "https://github.com/heroku/node-articles-nlp",
+  "website": "https://github.com/cwjohan/node-articles-nlp-redis-queue",
+  "repository": "https://github.com/cwjohan/node-articles-nlp-redis-queue",
   "logo": "https://node-js-sample.herokuapp.com/node.svg",
   "success_url": "/",
   "keywords": [
@@ -15,7 +15,7 @@
   },
   "addons": [
     "mongohq",
-    "rediscloud",
+    "rediscloud"
   ],
   "env": {
     "THRIFTY": {
