@@ -30,6 +30,10 @@
       "description": "authorization key for blitz.io load testing (optional)",
       "value": "",
       "required": false
+    },
+    "QUEUE_CONFIG_FILE": {
+      "description": "location of config for node-redis-queue",
+      "value": "/app/redis-queue-config.json"
     }
   }
 }
