@@ -138,3 +138,11 @@ a local instance of redis-server.
 
 **v0.0.9**: Works in thrifty mode by using node-foreman to run separate web and worker sub-processes in a single Heroku web process.
 
+**v0.0.10**: Upgraded node-redis-queue to version 0.1.10.
+
+**v0.0.11**: Upgraded node-redis-queue to version 0.2.1. This required some class and variable name changes.
+
+**v0.0.12**: Upgraded node-redis-queue to version 0.2.2. Re-enabled startScraping in thrifty mode in the web server.
+In connections.js, we now open the WorkQueueMgr connection in 'full-duplex' mode if config.thrifty is true. The
+Procfile now runs only the web dyno by default. That is, we assume thrifty mode.
+
