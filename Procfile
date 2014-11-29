@@ -1,1 +1,2 @@
-web: bash script/start 
+web: node lib/server.js 
+# worker: node lib/worker.js
